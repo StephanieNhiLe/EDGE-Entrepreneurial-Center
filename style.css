@@ -143,24 +143,83 @@ header {
 .sub-title {
     color: white;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: -70px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.book-sliding{
+/* .book-sliding{
     display: flex;
-    width: 50%;
+    width: 150px;
     margin: 20px;
     align-items: center;
+} */
 
+.news {
+    width: 350px;
+    height: 400px;
 }
-
 .display-sliding {
+    position: relative;
     background: #800020; 
     height: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-around;
     justify-items: center;
     align-items: center;
     margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.display-sliding input {
+    display: none;
+}
+
+.slide img {
+    display: flex;
+    width: 150px;
+    margin: 20px;
+    align-items: center;
+}
+
+/* mannual Slide navigation */
+.navigation-mannual {
+    position: relative;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -30%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -66%;
 }
