@@ -16,6 +16,15 @@ header {
     align-items: center;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 400px auto auto;
+    background: #800020; 
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
 .nav-bar {
     position: relative;
     background: #800020;
@@ -27,12 +36,13 @@ header {
 .logo-container {
     display: flex;
     color: white;
-    flex: 2;
+    flex: 3;
 }
 
 .logo {
     font-weight: 1000;
     margin:30px
+    flex: 2;
 }
 
 .location-container {
@@ -45,6 +55,25 @@ header {
     flex: 1;
 }
 
+.row {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links-footer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    list-style: none;
+    align-items: center;
+}
 .nav-links {
     height: 100%;
     display: grid;
@@ -55,11 +84,13 @@ header {
     align-items: center;
 }
 
-.nav-link {
+.nav-link, .contact {
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
+
+
 
 .img-intro img {
     display: flex;
@@ -142,8 +173,8 @@ header {
 
 .sub-title {
     color: white;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 30px;
+    margin-top: 20px;
     margin-bottom: -70px;
     z-index: 1;
     position: relative;
@@ -151,30 +182,31 @@ header {
     justify-content: center;
 }
 
-/* .book-sliding{
-    display: flex;
-    width: 150px;
-    margin: 20px;
-    align-items: center;
-} */
-
 .news {
     width: 350px;
     height: 400px;
 }
+
 .display-sliding {
     position: relative;
     background: #800020; 
-    height: 100%;
-    display: flex;
+    height: 90%;
+    /* display: flex; */
     /* flex-direction: column; */
     justify-content: space-around;
     justify-items: center;
     align-items: center;
     margin: 10px;
     border-radius: 10px;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    width: 200px;
+    top: 50px;
+    left: 70px;
     overflow: hidden;
-    
 }
 
 .display-sliding input {
@@ -182,10 +214,14 @@ header {
 }
 
 .slide img {
-    display: flex;
+    /* display: flex; */
     width: 150px;
     margin: 20px;
-    align-items: center;
+    display: flex;
+}
+
+.slide {
+    transition: 2s;
 }
 
 /* mannual Slide navigation */
@@ -217,9 +253,9 @@ header {
 }
 
 #radio2:checked ~ .first{
-    margin-left: -30%;
+    margin-left: -95%;
 }
 
 #radio3:checked ~ .first{
-    margin-left: -66%;
+    margin-left: -190%;
 }
