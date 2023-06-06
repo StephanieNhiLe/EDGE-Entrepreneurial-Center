@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <title>Landing Page</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-container">
+                <h1 class="logo">HENRY C. ADAMS <br> MEMORIAL LIBRARY</h1>
+            </div>
+            <div class="location-container">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <h4 class="location">
+                    209 W Third St. <br>
+                    Prophetstown, IL 62177 <br>
+                    309-714-2699 <br>
+                    Fax: 309-714-9015
+                </h4>
+            </div>
+            <div class="time-container">
+                <i class="fa-solid fa-clock"></i>
+                <h4 class="time">
+                    M, T, Th: 1-8pm <br>
+                    W, F: 1-5pm <br>
+                    Sat: 9am-1pm
+                </h4>
+            </div>
+            
+        </header>
+
+        <div class="img-intro">
+            <img src="./img/intro-lib.jpg" alt="intro">
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#">HOME</a></li>
+                <li><a class="nav-link" href="#">CATALOG</a></li>
+                <li><a class="nav-link" href="#">ASK A LIBRIAN</a></li>
+                <li><a class="nav-link" href="#">E-RESOURCES</a></li>
+                <li><a class="nav-link" href="#">EVENTS</a></li>
+                <li><a class="nav-link" href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="activity">
+                <div class="event frame">
+                    <img class="circle" src="./img/lib-event.jpg" alt="event">
+                    <a class="act-link" href="#">EVENTS</a>
+                </div>
+                <div class="club frame">
+                    <img class="circle" src="./img/lib-club.jpg" alt="club">
+                    <a class="act-link" href="#">BOOK CLUB</a>
+                </div>
+                <div class="book frame">
+                    <img class="circle" src="./img/new-book.jpg" alt="book">
+                    <a class="act-link" href="#">NEW BOOKS</a>
+                </div>
+            </section>
+
+            <section class="access-info">
+                <div class="quick-link">
+                    <h2 class="title">Quick Links</h2>
+                    <button class="btn">How to Renew Books</button>
+                    <button class="btn">Get a Library Card</button>
+                    <button class="btn">Browse E-books</button>
+                    <button class="btn">See Today's Weather</button>
+                </div>
+
+                <div class="news">
+                    <h2 class="title">Announcements/News</h2>
+                    <div class="display-sliding">
+                        <h2 class="sub-title">Book of Month</h2>
+                        <img class="book-sliding" src="./img/book-sample.jpg" alt="book-sample">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
