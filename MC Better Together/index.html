@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="">
     <!-- Css Links -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-layout/1.1.1/css-layout.min.js">
     <title>Document</title>
 </head>
 <body>
@@ -44,21 +45,55 @@
             <div class="info-detail">
                 <div class="info-card">
                     <img src="./img/img-box-1.jpg" alt="first-img">
-                    <h4>History of Mercer County Better Together</h4>
+                    <div class="info">
+                        <h4 >History of <br> Mercer County <br> Better Together</h4>
+                    </div>
                 </div>
                 
                 <div class="info-card">
                     <img src="./img/img-box-2.jpg" alt="second-img">
-                    <h4>More about us</h4>
+                    <div class="info">
+                        <h4>More about us</h4>
+                    </div>
                 </div>
                 
                 <div class="info-card">
                     <img src="./img/img-box-3.jpg" alt="third-img">
-                    <h4>MCRT Strategic Plan</h4>
+                    <div class="info">
+                        <h4>MCRT <br> Strategic Plan</h4>
+                    </div>
                 </div>
                 
             </div>
         </section>
+        <section class="project-container">
+            <h2>PROJECTS</h2>
+            <ul class="project-inner" data-glide-el="track">
+                <li class="info-slider">
+                    <img class="img-slide" src="./img/proj-sample-1.jpg" alt="slide-1">
+                    <div class="info-box">
+                        <h3 class="block-text">Career <br> Center</h3>
+                    </div>
+                </li>
+                <li class="info-slider">
+                    <img class="img-slide" src="./img/proj-sample-2.jpg" alt="slide-2">
+                    <div class="info-box">
+                        <h3>Parks + Rec</h3>
+                    </div>
+                </li>
+                <li class="info-slider">
+                    <img class="img-slide" src="./img/proj-sample-3.jpg" alt="slide-3">
+                    <div class="info-box">
+                        <h3>Business <br> Support</h3>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn">View All Projects</button>
+        </section>
     </main>
+
+    <footer>
+        <script src="js/glide.js"></script>
+    </footer>
 </body>
 </html>

@@ -119,10 +119,11 @@ button:hover, button:focus, button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: relative; */
+    flex-direction: column;
 }
 
 .info-detail {
-    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -131,23 +132,132 @@ button:hover, button:focus, button:active {
 
 .info-card {
     height: 300px;
-    overflow: hidden;
+    width: 300px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+    /* overflow: hidden; */
     
 }
 
-.info-card > img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+.info-card:hover{
+    cursor: pointer;
+    transform: translateY(20px);
 }
 
-.info-card > h4 {
-    width: 300px;
-    height: 300px;
+.info-card:before{
+    content: "";
     position: absolute;
-    box-sizing: border-box;
-    padding: 6px;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
     background: #5E9918;
-    opacity: 60%;
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.info-card:hover:before{
+    opacity: 0.5;
+}
+
+.info-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info-card .info {
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    bottom: 40%;
+    left: 30%;
+    
+}
+
+.info-card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.info-card .info h4 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 20x;
+}
+
+/* Caeousel Slider */
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px; */
+    max-width: 900px;
+    margin: 50px auto;
+    /* min-height: 100vh; */
+    overflow: hidden;
+
+}
+
+.project-container .project-inner {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    /* grid-auto-columns: calc((100% / 3) - 30px); */
+    /* overflow: hidden; */
+}
+
+.project-inner .info-card{
+    white-space: nowrap;
+    height: 300px;
+    
+}
+
+.project-inner{
+    display: flex;
+    margin: 20px;
+    
+}
+
+.info-slider{
+    margin: 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.img-slide {
+    height: 300px;
+    width: 210px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.info-box{
+    width: 210px;
+    height: 300px;   
+    background: rgba(63, 140, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    position: relative;
 }
