@@ -1,8 +1,7 @@
-var glideMulti = new Glide('.project-inner', {
-    type: 'slider',
-    autoplay: 4000,
-    focusAt: 'center',
-    perView: 2
+var glideMulti = new Glide('.project-container', {
+    type: 'carousel',
+    autoplay: 3500,
+    perView: 3
 });
 
 glideMulti.mount();

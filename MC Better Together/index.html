@@ -9,6 +9,7 @@
     <!-- Css Links -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-layout/1.1.1/css-layout.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -68,7 +69,9 @@
         </section>
         <section class="project-container">
             <h2>PROJECTS</h2>
+            
             <ul class="project-inner" data-glide-el="track">
+                <i class="fa-solid fa-angle-left"></i>
                 <li class="info-slider">
                     <img class="img-slide" src="./img/proj-sample-1.jpg" alt="slide-1">
                     <div class="info-box">
@@ -87,12 +90,51 @@
                         <h3>Business <br> Support</h3>
                     </div>
                 </li>
+                <i class="fa-solid fa-angle-right"></i>
             </ul>
+            
             <button class="btn">View All Projects</button>
         </section>
     </main>
 
     <footer>
+        <hr class="solid">
+        <div class="footer-container">
+            <div class="logo-container">
+                <img src="./img/MCBT official logo 2023.png" alt="logo" class="nav-logo">
+            </div>
+            <div class="footer-nav">
+                <p>
+                    200 North College Avenue <br>
+                    PO Box 73 <br>
+                    Aledo, IL 61231 <br>
+                    Phone: (309) 574-3123 <br>
+                    <a href="mailto:info@mcbettertogether.org">Email: info@mcbettertogether.org</a>
+                </p>
+            </div>
+            <div class="footer-nav">
+                <a class="footer-nav-link" href="">About</a>
+                <a class="footer-nav-link" href="">Projects</a>
+                <a class="footer-nav-link" href="">Mercer County Career Center</a>
+            </div>
+            <div class="footer-nav">
+                <a class="footer-nav-link" href="">News</a>
+                <a class="footer-nav-link" href="">Why Mercer?</a>
+                <a class="footer-nav-link" href="">Get Involved</a>
+            </div>
+            <div class="footer-nav">
+                <p>Get Involved</p>
+                <div class="social-media">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span>Site by Augustana Web Guild</span>
         <script src="js/glide.js"></script>
     </footer>
 </body>
