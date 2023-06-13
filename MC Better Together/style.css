@@ -56,9 +56,29 @@ p {
 }
 
 .nav-link {
+    position: relative;
     color: white;
     font-size: 18px;
     text-decoration: none;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color:#fff;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 /* Main Content */
@@ -87,8 +107,42 @@ p {
     background-image: url(./img/intro-bg.jpg);
     /* background-position: center; */
     background-size: cover;
-    height: 40vh;
-    opacity: 50%;
+    object-fit: cover;
+    height: 400px;
+    /* opacity: 50%; */
+    width: 100vw;
+    /* height: 100vh; */
+    object-fit: cover;
+    filter: brightness(.4);
+}
+
+.img-overlay h1 {
+    font-size: 35px;
+}
+
+.img-overlay button {
+    font-size: 30px;
+    font-weight: 500;
+    border: 2px solid #4bb2e6;
+    background: #4bb2e6;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+}
+
+.header-overlay {
+    position: relative;
+}
+.img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -308,6 +362,7 @@ footer {
     flex-wrap: wrap;
 }
 
+
 .footer-nav p {
     margin: 0;
 }
@@ -318,9 +373,30 @@ span {
 }
 
 .footer-nav-link {
+    position: relative;
     color: black;
     font-size: 18px;
     text-decoration: none;
+    padding: 0 0 5px;
+}
+
+.footer-nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #005883;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 3px;
+    transition: 0.3s;
+}
+
+.footer-nav-link:hover{
+    color:#005883;
+}
+
+.footer-nav-link:hover::after {
+    width: 100px;
 }
 
 .social-media {
@@ -336,7 +412,7 @@ span {
 }
 
 .social-media a i {
-    
+    color:#005883;
     height: 50px;
     width: 50px;
     cursor: pointer;
