@@ -1,3 +1,4 @@
+/* Initialize */
 * {
     margin: 0px;
     padding: 0px;
@@ -24,6 +25,7 @@ p {
     margin-inline-end: 0px;
 }
 
+/* Header */
 .logo-container {
     display: flex;
     justify-content: space-around;
@@ -173,7 +175,6 @@ button:hover, button:focus, button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
     flex-direction: column;
 }
 
@@ -193,7 +194,6 @@ button:hover, button:focus, button:active {
     flex-direction: row;
     align-items: flex-end;
     transition: 0.5s ease-in-out;
-    /* overflow: hidden; */
     
 }
 
@@ -262,10 +262,8 @@ button:hover, button:focus, button:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 50px; */
     max-width: 900px;
     margin: 50px auto;
-    /* min-height: 100vh; */
     overflow: hidden;
 
 }
@@ -295,8 +293,6 @@ button:hover, button:focus, button:active {
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
-    /* grid-auto-columns: calc((100% / 3) - 30px); */
-    /* overflow: hidden; */
 }
 
 .project-inner .info-card{
