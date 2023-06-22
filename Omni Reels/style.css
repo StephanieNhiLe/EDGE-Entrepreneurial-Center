@@ -4,14 +4,114 @@
     box-sizing: border-box;
 }
 
-:root {
-    --white: #ffffff;
-    --transparent-black: #000000;
-    --midnight-blue-2: #240B38;
-    --midnight-blue: #3B1956;
-  }
-  
-header {
+@font-face {
+  font-family: "Clash Display-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url(font/ClashDisplay-Medium.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Clash Display-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/ClashDisplay-Semibold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Clash Display-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/ClashDisplay-Regular.otf) format("truetype");
+}
+
+.navbar {
+  align-items: center;
+  background-color: var(--grape);
+  display: flex;
+  height: 98px;
+  min-width: 1440px;
+  padding: 14px 160px;
+}
+
+.overlap-group-2 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 9px;
+  box-shadow: 0px 6px 8px 4px #00000040;
+  display: flex;
+  height: 38px;
+  justify-content: flex-end;
+  margin-bottom: 0.12px;
+  margin-left: 20px;
+  min-width: 122px;
+  padding: 7.4px 8.1px;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.white-button {
+  color: var(--violet);
+  font-family: var(--font-family-clash_display-medium);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  height: 23px;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 106px;
+}
+
+.navbar .navbar-link {
+  height: 19px;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.logo-svg {
+  align-self: flex-start;
+  height: 69px;
+  width: 135px;
+}
+
+.overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--grape);
+  border: 1px solid;
+  border-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 6px 8px 4px #00000040;
+  display: flex;
+  height: 38px;
+  justify-content: flex-end;
+  margin-bottom: 0.12px;
+  margin-left: 20px;
+  min-width: 122px;
+  padding: 7.4px 8.1px;
+}
+
+.grape-button {
+  color: var(--white);
+  font-family: var(--font-family-clash_display-medium);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  height: 23px;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 106px;
+}
+
+/* header {
     background: var(--midnight-blue);
     padding: 14px 160px 15px;
     display: flex;
@@ -139,4 +239,4 @@ header {
     font-size: var(--clash-display-20-medium-size);
     font-weight: var(--clash-display-20-medium-weight);
     line-height: var(--clash-display-20-medium-line-height);
-  }
+  } */
