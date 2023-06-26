@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -25,13 +25,77 @@
   src: url(font/ClashDisplay-Regular.otf) format("truetype");
 }
 
+.section.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 90;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  /* max-width: 1440px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .navbar {
   align-items: center;
   background-color: var(--grape);
   display: flex;
+  overflow: hidden;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
   height: 98px;
-  min-width: 1440px;
+  min-width: 100%;
   padding: 14px 160px;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-logo {
+  /* width: 8.3rem; */
+}
+
+.logo-svg {
+  align-self: center;
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav-menu, .nav-button {
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu .navbar-link {
+  height: 19px;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: var(--font-family-clash_display-medium);
+  text-decoration: none;
 }
 
 .overlap-group-2 {
@@ -48,12 +112,6 @@
   padding: 7.4px 8.1px;
 }
 
-.valign-text-middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .white-button {
   color: var(--violet);
   font-family: var(--font-family-clash_display-medium);
@@ -65,21 +123,7 @@
   text-align: center;
   white-space: nowrap;
   width: 106px;
-}
-
-.navbar .navbar-link {
-  height: 19px;
-  letter-spacing: 1px;
-  line-height: normal;
-  margin-bottom: 1px;
-  margin-left: 10px;
-  white-space: nowrap;
-}
-
-.logo-svg {
-  align-self: flex-start;
-  height: 69px;
-  width: 135px;
+  text-decoration: none;
 }
 
 .overlap-group-1 {
@@ -109,6 +153,7 @@
   text-align: center;
   white-space: nowrap;
   width: 106px;
+  text-decoration: none;
 }
 
 /* header {
