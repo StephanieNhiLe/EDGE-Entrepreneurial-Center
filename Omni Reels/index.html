@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omni Reels</title>
     <link rel="stylesheet" href="style.css">
+    
     <!-- <link rel="stylesheet" href="styleguide.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-      <div class="content">
+      <div class="nav-menu-test">
+        <div class="navbar-container">
+          <div class="navbar-content">
+            <div class="navbar-brand">
+              <div class="logo"></div>
+            </div>
+            <div class="navbar-menu">
+              <a class="navbar-link valign-text-middle clashdisplay-normal-white-20px" href="">About Us</a>
+              <a class="navbar-link valign-text-middle clashdisplay-normal-white-20px" href="">Benefits</a>
+              <a class="navbar-link valign-text-middle clashdisplay-normal-white-20px" href="">Movies</a>
+              <a class="navbar-link valign-text-middle clashdisplay-normal-white-20px" href="">Contact</a>
+              <button class="button-white valign-text-middle clashdisplay-normal-grape-20px">Log In</button>
+              <button class="button-grape valign-text-middle clashdisplay-normal-white-20px">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="content">
         <div class="navbar">
           <div class="nav-logo">
             <a href="#"><img alt="logo" class="logo-svg" src="./img/Logo.png"/></a>
@@ -30,9 +48,215 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </header>
-    <footer>
+    <body>
+      <!-- Intro Section -->
+      <div class="intro-section">
+        <div class="inner-container">
+          <div class="image-wrapper">
+            <img src="./img/promo-vid.png" alt="" class="image">
+          </div>
+          <div class="title-section">
+            <div class="content">
+              <span class="clashdisplay-regular-normal-white-43px">JOIN OUR MAILING LIST TODAY!</span>
+              <span class="clashdisplay-regular-normal-white-28px">Get Updates On The Latest Omni Reels</span>
+            </div>
+            <div class="form">
+              <div class="input-wrapper">
+                <input 
+                type="text"
+                required
+                placeholder="Name"
+                class="form-text-input-grape clashdisplay-normal-white-20px"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input 
+                type="email"
+                required
+                placeholder="Email Address"
+                class="form-text-input-white clashdisplay-normal-white-20px"
+                />
+              </div>
+            </div>
+            <div class="actions">
+              <a href="jaavscript:SubmitForm('form1')">
+                <div class="button">
+                  <span class="title clashdisplay-medium-white-35px">Join Now</span>
+                </div>
+              </a>
+            </div>
+            <script>
+              if (!HTMLFormElement.prototype.reportValidity) {
+                HTMLFormElement.prototype.reportValidity = function () {
+                  if (this.checkValidity()) return true;
+                  var btn = document.createElement("button");
+                  this.appendChild(btn);
+                  btn.click();
+                  this.removeChild(btn);
+                  return false;
+                };
+              }
+        
+              function SubmitForm(form_name) {
+                var form = document.getElementsByName(form_name)[0];
+                if (form.reportValidity()) {
+                  form.submit();
+                  if (window.submitted) window.submitted();
+                }
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <div class="about-us">
+        <div class="small-container animate-enter1">
+          <div class="title-section animate-enter">
+            <div class="content">
+              <h1 class="clashdisplay-normal-white-50px">What Is Omni Reels?</h1>
+              <p class="paragraph clashdisplay-medium-white-25px">
+                "lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore
+                Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip
+                Ex Ea Commodo Consequat."
+              </p>
+              <a href="javascript:SubmitForm('form1')">
+                <div class="button-white">
+                  <span class="clashdisplay-medium-grape-22px">Get Started</span>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function ShowOnScroll() {
+          this.toShow = [];
+          this.nextEventY = undefined;
+        }
+  
+        ShowOnScroll.prototype.show = function (e) {
+          e.style.display = "";
+        };
+  
+        ShowOnScroll.prototype.hide = function (e) {
+          e.style.display = "none";
+        };
+  
+        ShowOnScroll.prototype.getTop = function (e) {
+          if (e.Top != undefined && e.Top != 0) {
+            return e.Top;
+          }
+          var top = 0;
+          var iter = e;
+          do {
+            top += iter.offsetTop || 0;
+            iter = iter.offsetParent;
+          } while (iter);
+          e.Top = top;
+          return top;
+        };
+  
+        ShowOnScroll.prototype.onScroll = function () {
+          var screenBottom = window.pageYOffset + window.innerHeight;
+          if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+            return;
+          }
+          this.nextEventY = undefined;
+          for (var i = 0; i < this.toShow.length; i++) {
+            var e = this.toShow[i];
+            var top = this.getTop(e);
+            if (top < screenBottom) {
+              this.show(e);
+              this.toShow.shift();
+              i--;
+            } else {
+              this.nextEventY = top;
+              break;
+            }
+          }
+        };
+  
+        ShowOnScroll.prototype.resetScrolling = function () {
+          // Clear state
+          var screenBottom = window.pageYOffset + window.innerHeight;
+          for (var i = 0; i < this.toShow.length; i++) {
+            var e = this.toShow[i];
+            this.show(e);
+          }
+          this.toShow = [];
+          this.nextEventY == undefined;
+  
+          // Collect items
+          var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+          itemsToShowOnScroll = itemsToShowOnScroll.filter(function (e) {
+            return e.getAttribute("show-on-scroll") != undefined;
+          });
+          var getTop = this.getTop;
+          itemsToShowOnScroll.sort(function (a, b) {
+            return getTop(a) - getTop(b);
+          });
+          for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+            var e = itemsToShowOnScroll[i];
+            var top = this.getTop(e);
+            if (top < screenBottom) {
+              continue;
+            }
+            this.toShow.push(e);
+            this.hide(e);
+            this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+          }
+        };
+  
+        ShowOnScroll.prototype.handleEvent = function (e) {
+          switch (e.type) {
+            case "scroll":
+              this.onScroll();
+              break;
+            case "resize":
+              this.resetScrolling();
+              break;
+          }
+        };
+  
+        ShowOnScroll.prototype.init = function () {
+          this.resetScrolling();
+          window.addEventListener("scroll", this);
+          window.addEventListener("resize", this);
+        };
+  
+        // After anima-src
+        setTimeout(function () {
+          var instShowOnScroll = new ShowOnScroll();
+          instShowOnScroll.init();
+        }, 250);
+      </script>
+      <script>
+        /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+  
+        if (!HTMLFormElement.prototype.reportValidity) {
+          HTMLFormElement.prototype.reportValidity = function () {
+            if (this.checkValidity()) return true;
+            var btn = document.createElement("button");
+            this.appendChild(btn);
+            btn.click();
+            this.removeChild(btn);
+            return false;
+          };
+        }
+  
+        function SubmitForm(form_name) {
+          var form = document.getElementsByName(form_name)[0];
+          if (form.reportValidity()) {
+            form.submit();
+            if (window.submitted) window.submitted();
+          }
+        }
+      </script>
+    </body>
+    <!-- <footer>
       <div>
         <div class="container">
           <div class="app-download">
@@ -53,6 +277,6 @@
           <img src="./img/Vector 2.png" alt="vector-2" class="small-vector-svg">
         </div>
       </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

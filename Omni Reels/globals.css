@@ -1,0 +1,33 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Clash Display-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url(font/ClashDisplay-Medium.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Clash Display-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/ClashDisplay-Semibold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Clash Display-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/ClashDisplay-Regular.otf) format("truetype");
+}
