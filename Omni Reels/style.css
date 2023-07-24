@@ -337,7 +337,7 @@ p, a {
 .inner-container{
   gap: 300px;
   width: 911px;
-  height: 1150px;
+  height: 1081px;
   display: flex;
   position: sticky;
   align-items: center;
@@ -347,7 +347,7 @@ p, a {
 }
 
 .image-wrapper{
-  height: 515px;
+  height: 462px;
   display: flex;
   align-self: center;
   align-items: center;
@@ -357,8 +357,8 @@ p, a {
 }
 
 .image{
-  width: 770px;
-  height: 100%;
+  /* width: 770px; */
+  /* height: 100%; */
   object-fit: cover;
 }
 
