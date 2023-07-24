@@ -211,13 +211,9 @@ p, a {
   height: auto;
   display: flex;
   overflow: hidden;
-  align-self: stretch;
   align-items: flex-start;
-  flex-shrink: 0;
-  padding-top: 0 24px;
   padding-left: var(--dl-space-space-sixunits);
   padding-right: var(--dl-space-space-sixunits);
-  padding-bottom: 0 24px;
   justify-content: center;
   background-color: rgba(58, 25, 86, 1);
 }
