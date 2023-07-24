@@ -27,17 +27,27 @@
   --dl-space-space-twounits: 32px;
 }
 
+
+
 .clashdisplay-medium-white-25px {
   color: var(--white);
-  font-family: var(--font-family-clash-display-medium);
+  font-family: var(--font-family-clash_display-medium);
   font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.clashdisplay-medium-white-50px {
+  color: var(--white);
+  font-family: var(--font-family-clash_display-medium);
+  font-size: var(--font-size-xxxl);
   font-weight: 500;
   font-style: normal;
 }
 
 .clashdisplay-medium-white-35px {
   color: var(--white);
-  font-family: var(--font-family-clash-display-medium );
+  font-family: var(--font-family-clash_display-medium );
   font-size: var(--font-size-xl);
   font-weight: 500;
   font-style: normal;
@@ -45,23 +55,15 @@
 
 .clashdisplay-medium-grape-22px {
   color: var(--grape-2);
-  font-family: var(--font-family-clash-display-medium);
+  font-family: var(--font-family-clash_display-medium);
   font-size: 22px;
   font-weight: 500;
   font-style: normal;
 }
 
-.clashdisplay-regular-normal-white-28px {
-  color: var(--white);
-  font-family: var(--font-family-clash-display-regular);
-  font-size: var(--font-size-l);
-  font-weight: 400;
-  font-style: normal;
-}
-
 .clashdisplay-normal-white-15px {
   color: var(--white);
-  font-family: var(--font-family-clash-display-semibold);
+  font-family: var(--font-family-clash_display-semibold);
   font-size: var(--font-size-xs);
   font-weight: 400;
   font-style: normal;
@@ -69,23 +71,55 @@
 
 .clashdisplay-normal-white-20px {
   color: var(--white);
-  font-family: var(--font-family-clash-display-semibold);
+  font-family: var(--font-family-clash_display-semibold);
   font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clashdisplay-normal-white-50px {
+  color: var(--white);
+  font-family: var(--font-family-clash_display-semibold);
+  font-size: var(--font-size-xxxl);
   font-weight: 400;
   font-style: normal;
 }
 
 .clashdisplay-normal-grape-20px {
   color: var(--grape);
-  font-family: var(--font-family-clash-display-semibold);
+  font-family: var(--font-family-clash_display-semibold);
   font-size: var(--font-size-s);
   font-weight: 800;
   font-style: normal;
 }
 
+.clashdisplay-regular-normal-grape-25px {
+  color: var(--grape);
+  font-family: var(--font-family-clash_display-regular);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.clashdisplay-regular-normal-white-25px {
+  color: var(--white);
+  font-family: var(--font-family-clash_display-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clashdisplay-regular-normal-white-28px {
+  color: var(--white);
+  font-family: var(--font-family-clash_display-regular);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  font-style: normal;
+}
+
 .clashdisplay-regular-normal-white-43px {
   color: var(--white);
-  font-family: var(--font-family-clash0-display-regular);
+  font-family: var(--font-family-clash_display-regular);
   font-size: var(--font-size-xxl);
   font-weight: 400;
   font-style: normal;
@@ -93,15 +127,7 @@
 
 .clashdisplay-regular-normal-white-50px {
   color: var(--white);
-  font-family: var(--font-family-clash0-display-regular);
-  font-size: var(--font-size-xxxl);
-  font-weight: 400;
-  font-style: normal;
-}
-
-.clashdisplay-normal-white-50px {
-  color: var(--white);
-  font-family: var(--font-family-clash-display-semibold);
+  font-family: var(--font-family-clash_display-regular);
   font-size: var(--font-size-xxxl);
   font-weight: 400;
   font-style: normal;
@@ -109,7 +135,7 @@
 
 .clashdisplay-semibold-normal-white-50px {
   color: var(--white);
-  font-family: var(--font-family-clash-display-semibold);
+  font-family: var(--font-family-clash_display-semibold);
   font-size: var(--font-size-xxxl);
   font-weight: 800;
   font-style: normal;
@@ -297,6 +323,7 @@ p, a {
   width: 100%;
   height: auto;
   display: flex;
+  position: relative;
   padding: 140px 24px 64px;
   overflow: hidden;
   align-self: stretch;
@@ -309,9 +336,10 @@ p, a {
 
 .inner-container{
   gap: 300px;
-  width: 960px;
-  /* height: 1080px; */
+  width: 911px;
+  height: 1150px;
   display: flex;
+  position: sticky;
   align-items: center;
   flex-shrink: 0;
   flex-direction: column;
@@ -319,7 +347,7 @@ p, a {
 }
 
 .image-wrapper{
-  height: 450px;
+  height: 515px;
   display: flex;
   align-self: center;
   align-items: center;
@@ -614,28 +642,19 @@ If possible, try to re-use the function */
 }
 
 .movie-title {
-  color: rgba(255, 255, 255, 1);
   height: auto;
-  font-size: 50px;
   align-self: stretch;
-  font-style: Semibold;
   text-align: right;
-  font-family: Clash Display;
-  font-weight: 600;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
 }
 
 .movie-paragraph{
-  color: rgba(255, 255, 255, 1);
   width: 698px;
   height: auto;
-  font-size: 25px;
-  font-style: Medium;
+
   text-align: right;
-  font-family: Clash Display;
-  font-weight: 500;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
@@ -763,10 +782,6 @@ If possible, try to re-use the function */
   position: relative;
 
   height: auto;
-  font-size: 50px;
-  font-style: Semibold;
-  font-family: Clash Display;
-  font-weight: 600;
   font-stretch: normal;
   text-decoration: none;
 }
