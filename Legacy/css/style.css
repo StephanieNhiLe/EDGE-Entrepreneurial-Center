@@ -1,0 +1,64 @@
+:root {
+    --navy-blue: rgb(6, 26, 40, 1);
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(0, 0, 0, 1);
+    --orange: rgb(243, 81, 15);
+
+    --font-size-xs: 15px;
+    --font-size-s: 20px;
+    --font-size-m: 25px;
+    --font-size-l: 28px;
+    --font-size-xl: 35px;
+    --font-size-xxl: 43px;
+    --font-size-xxxl: 50px;
+
+    --dl-space-space-sixunits: 96px;
+    --dl-space-space-fiveunits: 80px;
+    --dl-space-space-fourunits: 64px;
+    --dl-space-space-threeunits: 48px;
+    --dl-space-space-twounits: 32px;
+    --dl-space-space-unit: 16px;
+    --dl-space-space-onehalfunit: 24px;
+    --dl-space-space-halfunit: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html, body {
+    font-size: var(--font-size-s);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: transparent;
+    position: relative;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--navy-blue);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    padding: var(--dl-space-space-onehalfunit);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
