@@ -1,6 +1,6 @@
 /* :root Pseudo-Class Selector */
 :root{
-  --black: rgba(0, 0, , 1);
+  --black: rgba(0, 0, 0, 1);
   --violet: rgba(35, 11, 56, 1);
   --grape-2: rgba(58, 25, 86, 0.8);
   --grape: rgba(58, 25, 86, 1);

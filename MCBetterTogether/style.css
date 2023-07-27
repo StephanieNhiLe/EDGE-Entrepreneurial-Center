@@ -2,141 +2,41 @@
 :root {
     --black: rgb(0, 0, 0);
     --white: rgba(255, 255, 255, 1);
-
-    --font-size-xs: 15px;
-    --font-size-s: 20px;
-    --font-size-m: 25px;
-    --font-size-l: 28px;
-    --font-size-xl: 35px;
-    --font-size-xxl: 43px;
-    --font-size-xxxl: 50px;
-
-    --font-family-gelasio-bold: "Gelasio-Bold";
-    --font-family-gelasio-medium: "Gelasio-Medium";
-    --font-family-gelasio-regular: "Gelasio-Regular";
-    --font-family-gelasio-semibold: "Gelasio-SemiBold";
-
-    --font-family-texgyreheros-bold: "texgyreheros-bold";
-    --font-family-texgyreheros-regular: "texgyreheros-regular";
-    --font-family-texgyreheroscn-bold: "texgyreheroscn-bold";
-    --font-family-texgyreheroscn-regular: "texgyreheroscn-regular";
-
-}
-
-.gelasio-semibold-white-50px {
-    color: var(--white);
-    font-family: var(--font-family-gelasio-semibold);
-    font-size: var(--font-size-xxxl);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.gelasio-bold-black-35px {
-    color: var(--black);
-    font-family: var(--font-family-gelasio-bold);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    font-style: normal;
-}
-
-.gelasio-bold-white-25px {
-    color: var(--white);
-    font-family: var(--font-family-gelasio-bold);
-    font-size: var(--font-size-m);
-    font-weight: 700;
-    font-style: normal;
-}
-
-.gelasio-bold-white-35px {
-    color: var(--white);
-    font-family: var(--font-family-gelasio-bold);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    font-style: normal;
-}
-
-.gelasio-bold-white-50px {
-    color: var(--white);
-    font-family: var(--font-family-gelasio-bold);
-    font-size: var(--font-size-xxxl);
-    font-weight: 700;
-    font-style: normal;
-}
-
-.texgyreheros-bold-white-15px {
-    color: var(--white);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-xs);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-white-25px {
-    color: var(--white);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-m);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-white-35px {
-    color: var(--white);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-xl);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-white-50px {
-    color: var(--white);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-xxxl);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-black-20px {
-    color: var(--black);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-s);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-black-25px {
-    color: var(--black);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-m);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-black-35px {
-    color: var(--black);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-xl);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.texgyreheros-bold-black-50px {
-    color: var(--black);
-    font-family: var(--font-family-texgyreheros-bold);
-    font-size: var(--font-size-xxxl);
-    font-weight: 500;
-    font-style: normal;
 }
 
 
 /* Initialize */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Gelasio', serif;
+    /* For webkit */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
+html, body {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.justify {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, button {
+    font-family: 'Istok Web', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3, p, .slogan {
+    font-family: 'Gelasio', serif;
 }
 
 header {
@@ -156,20 +56,38 @@ p {
 }
 
 /* Header */
-.logo-container {
+.navbar head {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-container {
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+    margin: 20px;
+}
+
+.logo img {
+    width: 500px;
+    height: auto;
+}
+
+/* .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 100%;
     position: relative;
-    /* padding: 24px 50px; */
 }
 
 .logo-wrapper {
     width: 250px;
     height: 100px;
-    display: flex;
     align-items: center;
     align-self: center;
     justify-content: center;
@@ -184,31 +102,31 @@ p {
     height: 100px;
     object-fit: cover;
     object-position: center;
-}
+} */
 
-.nav-bar {
+/* .nav-bar {
     background: #005883;
     height: auto;
     width: 100%;
     padding: 24px 50px;
-}
+} */
 
-.nav-links {
+.nav-menu {
+    background: #005883;
     /* height: 100%; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    padding: 0 50px;
     list-style: none;
+    flex-wrap: wrap;
+    padding: 20px 60px;
 }
 
 .nav-link {
-    position: relative;
     color: white;
-    font-size: 18px;
-    text-decoration: none;
+    font-size: 30px;
 }
 
 .nav-link:after {
@@ -230,6 +148,10 @@ p {
     width: 100%;
 }
 
+.slogan {
+    font-size: 50px;
+    font-weight: 700;
+}
 
 /* Header Expand */
 .header-overlay {
@@ -257,7 +179,7 @@ p {
 
 button {
     display: flex;
-    padding: 8px 50px;
+    padding: 5px 50px;
     margin: 15px;
     border: 2px solid #5E9918;
     background: #B3D18E;
@@ -265,6 +187,8 @@ button {
     justify-content: center;
     cursor: pointer;
     border-radius: 7px;
+    color: #fff;
+    font-size: 30px;
     /* -webkit-transition-duration: 0.3s; */
     transition-duration: 0.3s;
     /* -webkit-transition-property: box-shadow, transform; */
@@ -275,7 +199,10 @@ button {
     background-color: #4bb2e6;
     border: none;
     border-radius: 0;
-    padding: 8px 60px;
+    padding: 8px 100px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
 }
 
 button:hover, button:focus, button:active {
@@ -290,9 +217,10 @@ button:hover, button:focus, button:active {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 100px; */
     padding: 24px 50px;
     position: relative;
+
+    /* margin: 2% 5%; */
 }
 
 .intro-container {
@@ -305,23 +233,33 @@ button:hover, button:focus, button:active {
     gap: 10px;
 }
 
+.title {
+    font-size: 50px;
+    font-weight: 400;
+}
+
 .paragraph {
     text-align: center;
-    width: 800px;
+    width: 900px;
     letter-spacing: 1.5px;
-    line-height: normal;
+    line-height: 38px;
     position: relative;
+}
+
+.info h1 {
+    font-family: 'Gelasio', serif;
 }
 
 /* Information Card */
 .info-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center;
     flex-direction: column;
     padding: 24px 50px;
     position: relative;
-    width: 100%;
+    width: 100%; */
+    margin: 2%;
 }
 
 .info-detail {
@@ -401,8 +339,8 @@ button:hover, button:focus, button:active {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 50px;
-    /* overflow: hidden; */
+    padding: 80px 50px;
+    padding-bottom: 150px;
 
 }
 
@@ -481,9 +419,16 @@ button:hover, button:focus, button:active {
     position: relative;
 }
 
+.info-box h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Gelasio', serif;
+    letter-spacing: 1.5px;
+}
 /* Footer */
 hr.solid {
-    border-top: 5px solid #5E9918;
+    border-top: 10px solid #5E9918;
 }
 
 footer {
@@ -494,7 +439,7 @@ footer {
 .footer-container {
     height: auto;
     display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr 0.75fr 0.75fr;
+    grid-template-columns: 2fr 1.5fr 1.25fr 0.5fr 0.75fr;
     padding: 20px;
 }
 
@@ -502,11 +447,26 @@ footer {
     height: 100px;
 }
 
+.footer-container .logo {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-container .logo img {
+    width: 400px;
+}
+
 .footer-nav {
     height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.footer-format {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 21px;
 }
 
 .text-align-left {
@@ -525,8 +485,6 @@ span {
 .footer-nav-link {
     position: relative;
     color: black;
-    font-size: 18px;
-    text-decoration: none;
     padding: 0 0 5px;
 }
 
