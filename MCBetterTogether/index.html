@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS Links -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Javascripts -->
+    <script src="glide.min.js" charset=""utf-8></script>
+    <title>Home</title>
     
 </head>
 <body>
     <header>
         <nav class="navbar head">
-            <div class="navbar-container justify">
+            <div class="navbar-container">
                 <a href="index.html" class="logo">
-                    <img src="./img/MCBT official logo 2023.png" alt="logo">
+                    <img src="img/MCBT official logo 2023.png" alt="logo">
                 </a>
                 <!-- <div class="logo-container">
                     <div class="logo-wrapper">
@@ -48,7 +53,7 @@
         </nav>
     </header>
 
-    <main class="justify">
+    <main>
         <div class="about-content">
             <div class="intro-container">
                 <h2 class="title">ABOUT US</h2>
@@ -61,21 +66,21 @@
         <div class="info-container">
             <div class="info-detail">
                 <div class="info-card">
-                    <img src="./img/img-box-1.jpg" alt="first-img">
+                    <img src="img/img-box-1.jpg" alt="first-img">
                     <div class="info">
                         <h1>History of <br> Mercer County <br> Better Together</h1>
                     </div>
                 </div>
                 
                 <div class="info-card">
-                    <img src="./img/img-box-2.jpg" alt="second-img">
+                    <img src="img/img-box-2.jpg" alt="second-img">
                     <div class="info">
                         <h1>More about us</h1>
                     </div>
                 </div>
                 
                 <div class="info-card">
-                    <img src="./img/img-box-3.png" alt="third-img">
+                    <img src="img/img-box-3.png" alt="third-img">
                     <div class="info">
                         <h1>MCRT <br> Strategic Plan</h1>
                     </div>
@@ -83,34 +88,53 @@
                 
             </div>
         </div>
-        <div class="project-container">
-            <div class="project-element">
-                <h2 class="title">PROJECTS</h2>
-                <div class="project-inner" data-glide-el="track">
-                    <i class="fa-solid fa-angle-left"></i>
-                    <div class="info-slider">
-                        <img class="img-slide" src="./img/proj-sample-1.jpg" alt="slide-1">
-                        <div class="info-box">
+        <div class="project-container ">
+            <h2 class="title">PROJECTS</h2>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="text-overlay-wrapper">
                             <h1>Career <br> Center</h1>
                         </div>
-                    </div>
-                    <div class="info-slider">
-                        <img class="img-slide" src="./img/proj-sample-2.jpg" alt="slide-2">
-                        <div class="info-box">
-                            <h1>Parks + Rec</h1>
+                        <img src="img/proj-sample-1.jpg" alt="slide-1">
+                        
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text-overlay-wrapper">
+                            <h1>Parks + <br> Rec</h1>
                         </div>
-                    </div>
-                    <div class="info-slider">
-                        <img class="img-slide" src="./img/proj-sample-3.jpg" alt="slide-3">
-                        <div class="info-box">
+                        <img src="img/proj-sample-2.jpg" alt="slide-1">
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text-overlay-wrapper">
                             <h1>Business <br> Support</h1>
                         </div>
-                    </div>
-                    <i class="fa-solid fa-angle-right"></i>
+                        <img src="img/proj-sample-3.jpg" alt="slide-1">
+                    </li>
+                </ul>
                 </div>
-                <button>View All Projects</button>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
             </div>
+
             
+
+                    <!-- <li class="glide__slide">
+                        <img src="img/proj-sample-1.jpg" alt="slide-1">
+                        <div class="text-overlay-wrapper">
+                            <h1Business <br> Support</h1>
+                        </div>
+                    </li> -->
+                    
+                
+                
+                
+            
+             <button>View All Projects</button>
         </div>
     </main>
 
@@ -163,5 +187,35 @@
         <span class="footer-format">Site by Augustana Web Guild</span>
         <!-- <script src="js/glide.js"></script> -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 3,
+            breakpoint: { 
+                800: {
+                    perView: 2
+                }
+            }
+        };
+
+        new Glide('.glide', config).mount();
+    </script>
+    <!-- <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 3,
+            focustAT: 'center',
+            gap: 20,
+            breakpoints: {
+                1024: {
+                perView: 2
+                },
+                600: {
+                perView: 1
+                }
+            }
+        }).mount();
+    </script> -->
 </body>
 </html>

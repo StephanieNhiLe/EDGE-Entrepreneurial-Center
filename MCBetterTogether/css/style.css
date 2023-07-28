@@ -31,8 +31,9 @@ h1, h2, h3, button {
     font-family: 'Istok Web', sans-serif;
 }
 
-a {
+a, li, ul {
     text-decoration: none;
+    list-style: none;
 }
 
 h3, p, .slogan {
@@ -156,7 +157,7 @@ p {
 /* Header Expand */
 .header-overlay {
     position: relative;
-    background-image: url(./img/intro-bg.png);
+    background-image: url(/img/intro-bg.png);
     align-items: center;
     background-size: cover;
     display: flex;
@@ -178,13 +179,13 @@ p {
 
 
 button {
-    display: flex;
+    /* display: flex; */
     padding: 5px 50px;
     margin: 15px;
     border: 2px solid #5E9918;
     background: #B3D18E;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     cursor: pointer;
     border-radius: 7px;
     color: #fff;
@@ -339,93 +340,44 @@ button:hover, button:focus, button:active {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 80px 50px;
+    padding: 80px 170px;
     padding-bottom: 150px;
-
 }
 
-.project-element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
+.glide__track {
+    width: 66vw;
+    margin: 50px 140px;
 }
 
-.project-inner i {
-    height: 50px;
-    width: 50px;
-    background:#4bb2e6;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.project-inner i:first-child {
-    left: -22px;
-}
-
-.project-inner i:last-child {
-    right: -22px;
-}
-
-.project-container .project-inner {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
-}
-
-.project-inner .info-card{
-    white-space: nowrap;
-    height: 300px;
-    
-}
-
-.project-inner{
-    display: flex;
-    margin: 20px;
-    
-}
-
-.info-slider{
-    /* margin: 0px; */
-    overflow: hidden;
-    /* list-style: none; */
+.text-overlay-wrapper {
+    background-color: rgba(2, 141, 255, 0.5);
+    height: 600px;
     width: 400px;
-    height: 500px;
-    position: relative;
-}
-
-.img-slide {
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
     position: absolute;
-}
-
-.info-box{
-    height: 100%;
-    background: rgba(63, 140, 255, 0.5);
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* color: white;
-    font-size: 30px;
-    font-weight: lighter; */
-    position: relative;
+    justify-content: center;
 }
 
-.info-box h1 {
-    font-size: 50px;
-    font-weight: 400;
-    color: #fff;
+.text-overlay-wrapper h1 {
     font-family: 'Gelasio', serif;
-    letter-spacing: 1.5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
 }
+
+.glide__slide img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+
+
 /* Footer */
 hr.solid {
     border-top: 10px solid #5E9918;
