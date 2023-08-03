@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ResponsiveTopNavDropdown.css">
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,27 +22,19 @@
 </head>
 <body>
     <header>
-        <nav class="navbar head">
+        <nav class="navbar head" >
             <div class="navbar-container">
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo" id="nav">
                     <img src="img/MCBT official logo 2023.png" alt="logo">
                 </a>
-                <!-- <div class="logo-container">
-                    <div class="logo-wrapper">
-                        
-                    </div>
-                </div> -->
                 <ul class="nav-menu">
-                    <li><a class="nav-link" href="">ABOUT</a></li>
+                    <li><a class="nav-link" href="#nav">ABOUT</a></li>
                     <li><a class="nav-link" href="">PROJECTS</a></li>
                     <li><a class="nav-link" href="">MC CAREER CENTER</a></li>
                     <li><a class="nav-link" href="">NEWS</a></li>
                     <li><a class="nav-link" href="">WHY MERCER?</a></li>
                     <li><a class="nav-link" href="">GET INVOLVED</a></li>
                 </ul>
-                <!-- <div class="nav-bar">
-                    
-                </div> -->
                 <div class="header-overlay">
                     <div class="info-overlay">
                         <span class="slogan">Connect. Promote. Educate.</span>
@@ -189,30 +182,23 @@
         const config = {
             type: 'carousel',
             perView: 3,
-            breakpoint: { 
+            breakpoints: { 
                 800: {
                     perView: 2
+                },
+                400: {
+                    perView: 1
                 }
             }
         };
-
         new Glide('.glide', config).mount();
+
+        $( function()
+			{
+				$( '#nav li:has(ul)' ).doubleTapToGo();
+			});
+        
+
     </script>
-    <!-- <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            perView: 3,
-            focustAT: 'center',
-            gap: 20,
-            breakpoints: {
-                1024: {
-                perView: 2
-                },
-                600: {
-                perView: 1
-                }
-            }
-        }).mount();
-    </script> -->
 </body>
 </html>

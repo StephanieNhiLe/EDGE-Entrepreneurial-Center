@@ -55,7 +55,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	position:relative;
 	float:left;
 	font-size:16px;
-	border-bottom:5px solid #003453;
+	/* border-bottom:5px solid #003453; */
 	margin-bottom:15px;
 }
 
