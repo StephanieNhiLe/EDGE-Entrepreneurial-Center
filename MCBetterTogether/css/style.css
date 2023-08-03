@@ -91,6 +91,7 @@ p {
     background: #005883;
     /* height: 100%; */
     display: flex;
+    flex-direction: row;
     /* flex-direction: row; */
     justify-content: space-between;
     justify-items: center;
@@ -129,17 +130,34 @@ p {
     font-weight: 700;
 }
 
+
 /* Header Expand */
+
+.wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
 .header-overlay {
     position: relative;
-    background-image: url(/img/intro-bg.png);
+    /* background-image: url(/img/intro-bg.png); */
     align-items: center;
     background-size: cover;
     display: flex;
     height: 500px;
     justify-content: center;
-    padding: 24px 50px;
+    
     width: 100%;
+}
+
+.header-overlay img {
+    object-fit: cover;
+    object-position: top;
+    height: 500px;
+    width: 100%;
+    position: absolute;
 }
 
 .info-overlay {
@@ -150,6 +168,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 24px 50px;
 }
 
 
@@ -214,6 +233,7 @@ button:hover, button:focus, button:active {
 
 .paragraph {
     text-align: center;
+    margin-inline: 25vw;
     /* width: 900px; */
     letter-spacing: 1.5px;
     line-height: 38px;
@@ -471,6 +491,7 @@ span {
     }
 
     .nav-link {
+        color: white;
         font-size: var(--font-size-m);
     }
 
@@ -524,6 +545,7 @@ span {
 @media screen and (max-width: 1024px) {
 
     .nav-link {
+        color: #fff;
         font-size: var(--font-size-s);
     }
 
@@ -559,11 +581,13 @@ span {
         grid-template-rows: 1fr;
         padding: 20px;
         gap: 1em;
+        justify-content: center;
     }
 
     .logo img {
         width: 30vw;
     }
+
 
 }
 
@@ -583,6 +607,11 @@ span {
 }
 
 @media screen and (max-width: 400px) {
+    .nav-link {
+        color: white;
+        font-size: var(--font-size-m);
+    }
+
     .info-detail {
         display: grid;
         grid-template-columns: auto;
@@ -598,6 +627,8 @@ span {
 
     .section-about {
         flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
     }
 
     .info-overlay button{
@@ -625,6 +656,20 @@ span {
     }
 
     .logo img {
-    width: 40vw;
-}
+        width: 200px;
+    }
+
+    .text-align-left {
+        text-align: center;
+    }
+
+    #nav{
+        position: relative;
+		flex-direction: column;
+    	gap: 15px;
+    }
+
+    .footer-format {
+        font-size: smaller;
+    }
 }
