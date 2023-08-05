@@ -37,7 +37,6 @@ html, body {
 .container{
 	width: 1600px;
 	margin:0 auto 0 auto;
-	/* background-color:#FFFFFF; */
 	overflow:hidden;
 }
 
