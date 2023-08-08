@@ -36,9 +36,9 @@ html, body {
 }
 
 .container{
-	width:1100px;
+	width: 1600px;
 	margin:0 auto 0 auto;
-	background-color:#FFFFFF;
+	/* background-color:#FFFFFF; */
 	/* overflow:hidden; */
 }
 
@@ -136,6 +136,7 @@ p {
 .slogan {
     font-size: var(--font-size-xxxl);
     font-weight: 700;
+    text-align: center;
 }
 
 
@@ -176,7 +177,8 @@ p {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 24px 50px;
+    /* padding: 24px 50px; */
+    margin-inline: 10vw;
 }
 
 
@@ -196,20 +198,27 @@ button {
     transition-property: box-shadow, transform;
 }
 
-.info-overlay button{
-    background-color: #4bb2e6;
-    border: none;
-    border-radius: 0;
-    padding: 8px 100px;
-    font-size: var(--font-size-xxl);
-    font-weight: 700;
-    color: #fff;
-}
-
 button:hover, button:focus, button:active {
     box-shadow: 0 0 20px rgba(63, 255, 127, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.glide__arrow {
+    -webkit-transform: none;
+    transform: none;
+    top: 40%;
+}
+
+.info-overlay button{
+    background-color: #4bb2e6;
+    border: none;
+    border-radius: 0;
+    /* padding: 8px 100px; */
+    margin:auto;
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: #fff;
 }
 
 /* Main Content */
@@ -239,6 +248,9 @@ button:hover, button:focus, button:active {
     font-weight: 700;
 }
 
+.paragraph {
+    width: 50%
+}
 
 /* Information Card */
 .info-container {
@@ -246,7 +258,7 @@ button:hover, button:focus, button:active {
     justify-content: center;
     align-items: center;
     /* margin: 2%; */
-    width: 100%;
+    /* width: 10%; */
 }
 
 .info-detail {
@@ -255,11 +267,12 @@ button:hover, button:focus, button:active {
     justify-content: center;
     align-items: center;
     position: relative;
+    /* width: fit-content; */
 }
 
 .info-card {
-    height: 35vw;
-    width: 35vw;
+    height: 25vw;
+    width: 25vw;
     padding: 0;
     position: relative;
     display: flex;
@@ -336,8 +349,8 @@ button:hover, button:focus, button:active {
 }
 
 .glide__track {
-    width: 66vw;
-    /* height: 62vh; */
+    width: 65vw;
+    height: 65vh;
     margin-inline: auto;
 }
 
@@ -497,26 +510,18 @@ span {
         font-size: var(--font-size-m);
     }
 
-    /* .info-detail {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
     .info-card {
-        height: 35vw;
-        width: 35vw;
-    } */
+        height: 30vw;
+        width: 30vw;
+    }
 
     .info h1 {
         font-size: var(--font-size-m);
     }
         
     .glide__track {
-        width: 75vw;
-        height: 55vh;
+        width: 65vw;
+        height: 63vh;
         margin-inline: auto;
     }
 
@@ -525,8 +530,8 @@ span {
         /* height: 25rem;
         width: 15rem; */
 
-        height: 55vh;
-        width: 23vw;
+        height: 63vh;
+        width: 22vw;
     }
     
     .text-overlay-wrapper h1 {
@@ -535,7 +540,7 @@ span {
     
     .glide__slide img {
         height: 63vh;
-        width: 23vw;
+        width: 22vw;
     }
 
     /* .info-card {
@@ -543,7 +548,10 @@ span {
         width: 20rem;
     } */
 
-    
+    .footer-container .logo {
+        align-items: flex-start;
+    }
+
 }
 
 /* ------------ 800 pixel wide version of the site ------------ */
@@ -574,19 +582,19 @@ span {
     }
 
     .glide__track {
-        width: 75vw;
+        width: 65vw;
         height: 65vh;
         margin-inline: auto;
     }
 
     .glide__slide img {
         height: 65vh;
-        width: 23vw;
+        width: 32vw;
     }
 
     .text-overlay-wrapper {
         height: 65vh;
-        width: 23vw;
+        width: 32vw;
     }
     
     .text-overlay-wrapper h1 {
@@ -612,6 +620,10 @@ span {
         width: 30vw;
     }
 
+
+    .paragraph {
+        width:60%;
+    }
 
 }
 
@@ -646,23 +658,49 @@ span {
     }
 
     .glide__track {
-        width: 66vw;
-        height: 70vh;
+        width: 67vw;
+        height: 95vh;
         margin-inline: auto;
     }
 
     .glide__slide img {
-        height: 70vh;
-        width: 66vw;
+            height: 95vh;
+    width: 66vw;
     }
 
     .text-overlay-wrapper {
-        height: 70vh;
-        width: 66vw;
+            height: 95vh;
+    width: 66vw;
     }
 
     .text-overlay-wrapper h1 {
+        font-size: var(--font-size-xxxxxl);
+    }
+
+    .footer-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .footer-format {
+        font-size: 18px;
+    }
+
+    .title {
         font-size: var(--font-size-xxl);
+    }
+
+    .paragraph {
+        width: 70%;
+    }
+
+    .button {
+        font-size: var(--font-size-xm);
     }
 }
 
@@ -687,7 +725,7 @@ span {
     }
 
     .text-overlay-wrapper h1 {
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-xxxxxl);
     }
 
     .glide__track {
@@ -708,6 +746,38 @@ span {
 
     .text-overlay-wrapper h1 {
         font-size: var(--font-size-xxl);
+    }
+
+    .footer-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .footer-format {
+        font-size: 18px;
+    }
+
+    .section-about {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: var(--font-size-xxl);
+    }
+
+    .paragraph {
+        width: 80%;
+    }
+
+    .button {
+        font-size: var(--font-size-xm);
     }
 }
 /* ------------ 300 pixel wide version of the site ------------ */
@@ -791,5 +861,31 @@ span {
 
     .footer-format {
         font-size: smaller;
+    }
+
+    .footer-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .footer-format {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: var(--font-size-xxl);
+    }
+
+    .paragraph {
+        width: 90%;
+    }
+
+    .button {
+        font-size: var(--font-size-m);
     }
 }
