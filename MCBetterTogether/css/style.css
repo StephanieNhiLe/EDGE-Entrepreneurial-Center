@@ -109,6 +109,22 @@ p {
     padding: 15px 60px;
 }
 
+.nav-menu li ul {
+    position: absolute;
+    padding: 20px 0;
+    z-index: 9999;
+    width: 240px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    border-top: 3px solid #2ea3f2;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    -webkit-transform: translateZ(0);
+    text-align: left;
+}
+
 .nav-link {
     color: white;
     font-size: var(--font-size-m);

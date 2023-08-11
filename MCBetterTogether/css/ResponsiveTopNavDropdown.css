@@ -102,7 +102,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 
 	/* second level */
 
-#nav li ul{
+/* #nav li ul{
 	background-color:#ccc;
 	display: none;
 	position: absolute;
@@ -113,7 +113,8 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	text-align:left;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
-}
+} */
+
 #nav li:hover ul{
 	display: block;
 	left: 0;
