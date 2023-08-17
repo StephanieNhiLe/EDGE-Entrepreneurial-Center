@@ -514,6 +514,77 @@ span {
     display: contents;
 }
 
+/* PAGE About */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.logos-slide {
+    display: inline-block;
+    /* animation: 25s slide infinite linear; */
+    animation: scroll 5s linear infinite;
+    /* display: flex; */
+    /* width: calc(250px * 14); */
+}
+
+.logos-slide img {
+    height: 150px;
+    margin: 0 50px;
+    max-width: none;
+}
+
+/* Re-test */
+
+
+
+
+
+/* Responsive Condition Starts Here */
+/* Responsive Condition Starts Here */
+/* Responsive Condition Starts Here */
 /* ------------ 960 pixel wide version of the site ------------ */
 @media only screen and (min-width: 1104px) and (max-width: 1280px) {
 
@@ -917,3 +988,5 @@ span {
         font-size: var(--font-size-m);
     }
 }
+
+
