@@ -11,9 +11,9 @@
 <div class="section-container">
     <div class="content-container">
         <h2 class="title">MCBT PARTNERS</h2>
-        <h2>Financial Contributors</h2>
-        <div class="logos">
-            <div class="logos-slide">
+        <h2 class="sub-title">Financial Contributors</h2>
+        <div class="finance-logos">
+            <div class="finance-logos-slide">
                 <img src="img/finance-logo/cityofaledo.png" alt="">
                 <img src="img/finance-logo/diamondag.png" alt="">
                 <img src="img/finance-logo/farmersmerchantsbank.png" alt="">
@@ -28,9 +28,9 @@
                 <img src="img/finance-logo/reynoldstelephone.jpg" alt="">
             </div>
         </div>
-        <h2>Project Partners</h2>
-        <div class="logos">
-            <div class="logos-slide">
+        <h2 class="sub-title">Project Partners</h2>
+        <div class="project-logos">
+            <div class="project-logos-slide">
                 <img src="img/project-logo/aledorehabilitationandhealthcare.png" alt="">
                 <img src="img/project-logo/americanjobcenter.jpg" alt="">
                 <img src="img/project-logo/americasSBDCillinois.png" alt="">
@@ -66,8 +66,17 @@
     </div>
 </div>
 
+<div class="section-container">
+    <div class="content-container">
+        <h2 class="title">DIRECTORY</h2>
+        
+    </div>
+</div>
 <script>
-    var copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector(".logos").appendChild(copy);
+    var copyfinance = document.querySelector(".finance-logos-slide").cloneNode(true);
+    document.querySelector(".finance-logos").appendChild(copyfinance);
+
+    var copyproject = document.querySelector(".project-logos-slide").cloneNode(true);
+    document.querySelector(".project-logos").appendChild(copyproject);
 </script> 
 <?php require_once("assets/footer.php"); ?>
