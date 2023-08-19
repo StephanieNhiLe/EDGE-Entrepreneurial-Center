@@ -259,6 +259,10 @@ button:hover, button:focus, button:active {
     gap: 10px;
 }
 
+.intro-container img{
+    width: 90%;
+}
+
 .title {
     font-size: var(--font-size-xxxl);
     font-weight: 700;
@@ -524,17 +528,28 @@ span {
     }
 }
 
-.logos {
+.sub-title {
+    margin: 50px 0 20px 0;
+    font-size: var(--font-size-xl);
+}
+
+.finance-logos, .project-logos {
     overflow: hidden;
     padding: 60px 0;
-    background: white;
+    background: #ade4ff;
     white-space: nowrap;
     position: relative;
     width: 100%;
 }
 
-.logos:before,
-.logos:after {
+.project-logos {
+    background: #B3D18E;
+}
+
+.finance-logos:before,
+.finance-logos:after,
+.project-logos:before,
+.project-logos:after {
     position: absolute;
     top: 0;
     width: 250px;
@@ -543,18 +558,18 @@ span {
     z-index: 2;
 }
 
-.logos:before {
+.finance-logos:before, .project-logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
-.logos:after {
+.finance-logos:after, .project-logos:after {
     right: 0;
     /* transform: rotateZ(180deg); */
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-.logos:hover .logos-slide {
+.finance-logos:hover .finance-logos-slide, .project-logos:hover .project-logos-slide {
     animation-play-state: paused;
 }
 
@@ -563,15 +578,20 @@ span {
 	100% { transform: translateX(calc(-400px * 12))}
 }
 
-.logos-slide {
+.finance-logos-slide {
     display: inline-block;
-    animation: 25s slide infinite linear;
+    animation: 55s slide infinite linear;
     /* animation: scroll 5s linear infinite;
     display: flex;
     width: calc(400px * 24); */
 }
 
-.logos-slide img {
+.project-logos-slide {
+    display: inline-block;
+    animation: 95s slide infinite linear;
+}
+
+.finance-logos-slide img, .project-logos-slide img {
     /* width: 300px; */
     height: 100px;
     margin: 0 50px;
@@ -581,12 +601,114 @@ span {
 
 /* Basic Container */
 .section-container {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px 50px;
+    /* position: relative; */
 }
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2vw;
+    gap: 10px;
+    overflow: hidden;
+}
 
+.title{
+    border-bottom: 10px solid #005883;
+    padding-bottom: 1px;    
+}
 
+/* Exec Board Here */
+.content-container .row {
+    width: auto;
+    display: flex;
+}
 
+.profile {
+    margin-top: 25px;
+}
+
+.profile .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.img-box img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-box:after {
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul {
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover:after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box a:hover li {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.profile h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
 
 /* Responsive Condition Starts Here */
 /* Responsive Condition Starts Here */
