@@ -66,10 +66,10 @@
     </div>
 </div>
 
-<div class="section-container">
-    <div class="content-container">
-        <h2 class="title">DIRECTORY</h2>
-        <h2 class="sub-title">Board of Directors</h2>
+<div class="grid-container">
+    <h2 class="title">DIRECTORY</h2>
+    <h2 class="sub-title">Board of Directors</h2>
+    <div class="grid-section">
         <div class="row">
             <div class="col-md-3 profile text-center">
                 <div class="img-box">
@@ -126,8 +126,8 @@
                 <h3>President</h3>
             </div>
         </div>
-        <h2 class="sub-title">Staff</h2>
     </div>
+    <h2 class="sub-title">Staff</h2>
 </div>
 <script>
     var copyfinance = document.querySelector(".finance-logos-slide").cloneNode(true);

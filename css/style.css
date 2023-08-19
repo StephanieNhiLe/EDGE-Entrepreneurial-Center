@@ -266,6 +266,8 @@ button:hover, button:focus, button:active {
 .title {
     font-size: var(--font-size-xxxl);
     font-weight: 700;
+    text-align: center;
+    margin-inline: auto;
 }
 
 .paragraph {
@@ -531,6 +533,7 @@ span {
 .sub-title {
     margin: 50px 0 20px 0;
     font-size: var(--font-size-xl);
+    text-align: center;
 }
 
 .finance-logos, .project-logos {
@@ -626,9 +629,21 @@ span {
 }
 
 /* Exec Board Here */
-.content-container .row {
-    width: auto;
-    display: flex;
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px 50px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .profile {
