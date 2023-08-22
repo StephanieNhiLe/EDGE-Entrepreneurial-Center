@@ -94,8 +94,8 @@
                         <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
                     </ul>
                 </div>
-                <h2>Kirk Doonan</h2>
-                <h3>President</h3>
+                <h2>Mark Johnson</h2>
+                <h3>Vice President</h3>
             </div>
         </div>
         <div class="row">
@@ -108,8 +108,8 @@
                         <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
                     </ul>
                 </div>
-                <h2>Kirk Doonan</h2>
-                <h3>President</h3>
+                <h2>Stephanie Retherford</h2>
+                <h3>Secretary</h3>
             </div>
         </div>
         <div class="row">
@@ -122,12 +122,168 @@
                         <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
                     </ul>
                 </div>
-                <h2>Kirk Doonan</h2>
-                <h3>President</h3>
+                <h2>Ryan Latko</h2>
+                <h3>Treasurer</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Audrey Bryant</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Laurie Epperly</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Bev Gray</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Roger Grundstrom</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Ted Rogalski</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Rusty Ruggles</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Tarah Sipes</h2>
+                <h3>Position</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Bob Springer</h2>
+                <h3>Position</h3>
             </div>
         </div>
     </div>
     <h2 class="sub-title">Staff</h2>
+    <div class="grid-section">
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Kyle McEwen</h2>
+                <h3>Executive Director</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Darren Winsor</h2>
+                <h3>Development Specialist</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 profile text-center">
+                <div class="img-box">
+                    <img src="img/exec-board/person1.jpg" alt="exec-board" class="img-responsive">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-phone"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+                <h2>Tara McFarland</h2>
+                <h3>Administrative Specialist</h3>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     var copyfinance = document.querySelector(".finance-logos-slide").cloneNode(true);
