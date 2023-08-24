@@ -34,7 +34,7 @@
         <header id="header">
             <div class="navbar head" >
                 <div class="navbar-container">
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <img src="img/MCBT official logo 2023.png" alt="logo">
                     </a>
             

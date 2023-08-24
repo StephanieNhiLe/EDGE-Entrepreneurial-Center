@@ -25,31 +25,31 @@
                 <img src="img/finance-logo/newwindsortelephone.png" alt="">
                 <img src="img/finance-logo/novacablevision.png" alt="">
                 <img src="img/finance-logo/remax.svg" alt="">
-                <img src="img/finance-logo/reynoldstelephone.jpg" alt="">
+                <img src="img/finance-logo/reynoldstelephone.png" alt="">
             </div>
         </div>
         <h2 class="sub-title">Project Partners</h2>
         <div class="project-logos">
             <div class="project-logos-slide">
                 <img src="img/project-logo/aledorehabilitationandhealthcare.png" alt="">
-                <img src="img/project-logo/americanjobcenter.jpg" alt="">
+                <img src="img/project-logo/americanjobcenter.png" alt="">
                 <img src="img/project-logo/americasSBDCillinois.png" alt="">
                 <img src="img/project-logo/augustanacollege.png" alt="">
                 <img src="img/project-logo/birthtofive.png" alt="">
-                <img src="img/project-logo/bistateregionalcommision.jpg" alt="">
-                <img src="img/project-logo/blackhawkcollege.jpg" alt="">
+                <img src="img/project-logo/bistateregionalcommision.png" alt="">
+                <img src="img/project-logo/blackhawkcollege.png" alt="">
                 <img src="img/project-logo/cityofaledo.png" alt="">
                 <img src="img/project-logo/communityheartandsoul.png" alt="">
                 <img src="img/project-logo/DCEO.png" alt="">
                 <img src="img/project-logo/dollypartonsimaginationlibrary.png" alt="">
                 <img src="img/project-logo/generalgrindandmachine.webp" alt="">
-                <img src="img/project-logo/IIRA.jpeg" alt="">
+                <img src="img/project-logo/IIRA.png" alt="">
                 <img src="img/project-logo/ipha.png" alt="">
                 <img src="img/project-logo/mercercountyboard.png" alt="">
                 <img src="img/project-logo/mercercountyfamilycrisiscenter.png" alt="">
-                <img src="img/project-logo/mercercountyhealthdepartment.jpg" alt="">
+                <img src="img/project-logo/mercercountyhealthdepartment.png" alt="">
                 <img src="img/project-logo/mercercountyschooldistrict404.webp" alt="">
-                <img src="img/project-logo/mercercountyymca.jpg" alt="">
+                <img src="img/project-logo/mercercountyymca.png" alt="">
                 <img src="img/project-logo/molinefoundation.webp" alt="">
                 <img src="img/project-logo/monmouthcollege.png" alt="">
                 <img src="img/project-logo/projectnow.png" alt="">
@@ -60,7 +60,7 @@
                 <img src="img/project-logo/universityofillinoisextension.webp.crdownload.webp" alt="">
                 <img src="img/project-logo/villageofjoy.png" alt="">
                 <img src="img/project-logo/villageofnewwindsor.png" alt="">
-                <img src="img/project-logo/windborngroup.jpg" alt="">
+                <img src="img/project-logo/windborngroup.png" alt="">
             </div>
         </div>
     </div>
