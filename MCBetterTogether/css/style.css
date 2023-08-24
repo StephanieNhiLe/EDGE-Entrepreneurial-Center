@@ -396,11 +396,20 @@ button:hover, button:focus, button:active {
     text-align: center;
 }
 
-.glide__slide img {
+/* .glide__slide img { */
     /* width: 20rem;
     height: 30rem; */
     height: 62vh;
     width: 21vw;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: -1;
+/* } */
+
+.project-img {
+    height: 63vh;
+    width: 22vw;
     object-fit: cover;
     object-position: center;
     position: relative;
@@ -871,6 +880,30 @@ form input, form textarea {
     color: #5E9918;
     transition: all ease 0.3s;
 }
+
+/* Why Mercer */
+.slide-img {
+    width: 900px;
+    height: auto;
+}
+
+.hover-box {
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+.hover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hover-img:hover {
+    color: rgba(0,0,0,.1);
+}
+
 
 /* Responsive Condition Starts Here */
 /* Responsive Condition Starts Here */

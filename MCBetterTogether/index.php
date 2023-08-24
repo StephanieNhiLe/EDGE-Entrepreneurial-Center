@@ -53,20 +53,20 @@
                             <div class="text-overlay-wrapper">
                                 <h1>Career <br> Center</h1>
                             </div>
-                            <img src="img/proj-sample-1.jpg" alt="slide-1">
+                            <img class="project-img" src="img/proj-sample-1.jpg" alt="slide-1">
                             
                         </li>
                         <li class="glide__slide">
                             <div class="text-overlay-wrapper">
                                 <h1>Parks + <br> Rec</h1>
                             </div>
-                            <img src="img/proj-sample-2.jpg" alt="slide-1">
+                            <img class="project-img" src="img/proj-sample-2.jpg" alt="slide-1">
                         </li>
                         <li class="glide__slide">
                             <div class="text-overlay-wrapper">
                                 <h1>Business <br> Support</h1>
                             </div>
-                            <img src="img/proj-sample-3.jpg" alt="slide-1">
+                            <img class="project-img" src="img/proj-sample-3.jpg" alt="slide-1">
                         </li>
                     </ul>
                 </div>
