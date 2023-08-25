@@ -2,25 +2,189 @@
 <div class="section-container">
     <div class="content-container">
         <h2 class="title">COMMUNITIES</h2>
-        <div class="section-container">
+        <div class="section-container wrap">
             <div class="hover-box">
                 <div class="hover-img">
                     <img src="img/communities/eliza_church.png" alt="">
                 </div>
-                <div class="hover-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_aledo.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_joy.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_keithsburg.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_matherville.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_newboston.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_newwindsor.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_north_henderson.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_preemption.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_seaton.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_sherrard.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hover-box">
+                <div class="hover-img">
+                    <img src="img/communities/vintage_viola.png" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="hover-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <h2 class="title">START A BUSINESS</h2>
-            <div class="section-container glide">
+            <div class="section-container glide" id="business">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
@@ -47,8 +211,9 @@
                 </div>
             </div>
             
+            
         <h2 class="title">SURVEY TRENDS</h2>
-        <div class="section-container glide">
+        <div class="section-container glide" id="survey">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
@@ -74,6 +239,7 @@
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </div>
+        
     </div>
 </div>
 
