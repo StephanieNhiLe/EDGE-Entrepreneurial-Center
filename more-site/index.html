@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>More Employment Agency</title>
+<link href="ResponsiveTopNavDropdown.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="doubletaptogo.min.js" type="text/javascript"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!--[if IE]>
+	<script src="picturefill.min.js" async="async"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="dist/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="grid-one-fourth-three-fourths">
+        	<img src="images/logo.png" alt="More employment agency logo with red letter O" />
+
+            <!-- Re-use header by php-->
+            <?php include('includes/nav.html'); ?>
+
+        
+        	</div><!--end header-grid-->
+        	<div class="feature-photo">
+        	    <img src="images/banner.jpg" alt="Overhead photo of several professionals working with laptops at a large rectangular table" />
+        	    <div class="feature-text">
+        	        <h1>More Employment Agency - We Got the Job for You!</h1>
+        	        <p>Are you in a job, but looking for something more? We are your source to find a job you can pour your heart and soul into. Find your next job, where you can make more for yourself, at the More Employment Agency.</p>
+        	    </div>
+        	</div>
+        </header>
+        
+        <main>
+            <!-- What is the bets code for setting up a button? -->
+            <p class="center"><a href="#" class="black-button">Apply Now</a></p>
+
+            <p>MORE Employment Agency is committed to making sure that your new  job is more than you could ever imagine.  With time-proven methods such as our patented employment quiz, you’re guaranteed to find a job that’s to die for!</p>
+            <!-- BEM Structure
+                - [Block] div
+                    - [Element] text
+                - [Block] div
+                    - [Element] text
+                - [Block] div
+                    - [Element] text
+             -->
+             <!-- When to use section? -->
+            <section class="gray-background about-grid">
+                <div>
+                    <h2>Ab<span class="red">o</span>ut</h2>
+                </div>
+                <div>
+                    <p>More Employment Agency was started by founder Jimmy More many, many years ago after he realized that people could be...well...more than what they are now. All it takes is signing a contract with our agency, and we will help you to get a job that pays more and treats you the way you deserve.</p>
+                </div>
+                <div class="arrow">
+                    >
+                </div>
+            </section><!--end gray-background about-grid-->
+
+            <section class="grid-three-columns box-grid">
+                <div>
+                    <img src="images/box1.jpg" alt="Group of people sitting around a conference table" />
+                    <!-- When to use span?
+                        Case 1: Make change to a char among other letters
+                    -->
+                    <p><span class="red">O</span>ur Team</p>
+                </div>
+                <div>
+                    <img src="images/box2.jpg" alt="Closeup of people talking in a workplace" />
+                    <p>Take Our Employment Quiz</p>
+                </div>
+                <div>
+                    <img src="images/box3.jpg" alt="Closeup of two people's legs as they walk on a crosswalk" />
+                    <!-- What & When for &amp; 
+                        &amp; is the code behind the symbol & (an ampersand).
+                    -->
+                    <p>Interview Tips &amp; Tricks</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <!-- Reuse footer by php -->
+            <?php include('includes/footer.html'); ?>
+        </footer>
+    </div><!--end container-->
+</body>
+</html>
