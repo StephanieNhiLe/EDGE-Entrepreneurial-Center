@@ -31,7 +31,7 @@
 </head>
 <body>
     <div class="container">
-    <header>
+    <header id="header">
         <div class="navbar head" >
             <div class="navbar-container">
                 <a href="index.html" class="logo">
@@ -44,18 +44,18 @@
                     <nav>
                         <ul class="nav-menu" id="nav", style="display: flex;">
                             <li>
-                                <a class="nav-link" href="">ABOUT</a>
+                                <a class="nav-link" href="/about.html">ABOUT</a>
                                 <ul class="sub-menu">
                                     <li><a href="#">Our Impact</a></li>
                                     <a href="#">MCBT Partners</a>
                                     <a href="#">Directory</a>
                                 </ul>
                             </li>
-                            <li><a class="nav-link" href="">PROJECTS</a></li>
-                            <li><a class="nav-link" href="">MC CAREER CENTER</a></li>
-                            <li><a class="nav-link" href="">NEWS</a></li>
-                            <li><a class="nav-link" href="">WHY MERCER?</a></li>
-                            <li><a class="nav-link" href="">GET INVOLVED</a></li>
+                            <li><a class="nav-link" href="projects.php">PROJECTS</a></li>
+                            <li><a class="nav-link" href="mccareercenter.php">MC CAREER CENTER</a></li>
+                            <li><a class="nav-link" href="news.php">NEWS</a></li>
+                            <li><a class="nav-link" href="whymercer.php">WHY MERCER?</a></li>
+                            <li><a class="nav-link" href="getinvolved.php">GET INVOLVED</a></li>
                         </ul>
                         <script>
                             $( function()
@@ -65,19 +65,20 @@
                         </script>
                     </nav>
                 <!-- </div> -->
-                <div class="header-overlay">
-                    <img src="img/intro-bg.png" alt="intro-bg">
-                    <div class="info-overlay">
-                        <h1 class="slogan">Connect. Promote. Educate.</h1>
-                        <button>Learn More</button> 
-                    </div>
-                </div>
-                <hr class="solid">
+                
             </div>
         </div>
     </header>
 
     <main>
+        <div class="header-overlay">
+            <img src="img/intro-bg.png" alt="intro-bg">
+            <div class="info-overlay">
+                <h1 class="slogan">Connect. Promote. Educate.</h1>
+                <button>Learn More</button> 
+            </div>
+        </div>
+        <hr class="solid">
         <div class="about-content">
             <div class="intro-container">
                 <h2 class="title">ABOUT US</h2>
