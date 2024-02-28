@@ -1,3 +1,4 @@
+<<<<<<< HEAD:index.php
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
@@ -70,6 +71,11 @@
         </div>
     </header>
 
+=======
+<?php require_once("assets/header.php"); ?>
+
+<!-- Add Header here -->
+>>>>>>> b1ca9e6d39b286a6a68ec9f155cb9dcfba825a8c:MCBetterTogether/index.php
     <main>
         <div class="header-overlay">
             <img src="img/intro-bg.png" alt="intro-bg">
@@ -122,20 +128,32 @@
                             <div class="text-overlay-wrapper">
                                 <h1>Career <br> Center</h1>
                             </div>
+<<<<<<< HEAD:index.php
                             <img src="img/proj-sample-1.jpg" alt="slide-1">
+=======
+                            <img class="project-img" src="img/proj-sample-1.jpg" alt="slide-1">
+>>>>>>> b1ca9e6d39b286a6a68ec9f155cb9dcfba825a8c:MCBetterTogether/index.php
                             
                         </li>
                         <li class="glide__slide">
                             <div class="text-overlay-wrapper">
                                 <h1>Parks + <br> Rec</h1>
                             </div>
+<<<<<<< HEAD:index.php
                             <img src="img/proj-sample-2.jpg" alt="slide-1">
+=======
+                            <img class="project-img" src="img/proj-sample-2.jpg" alt="slide-1">
+>>>>>>> b1ca9e6d39b286a6a68ec9f155cb9dcfba825a8c:MCBetterTogether/index.php
                         </li>
                         <li class="glide__slide">
                             <div class="text-overlay-wrapper">
                                 <h1>Business <br> Support</h1>
                             </div>
+<<<<<<< HEAD:index.php
                             <img src="img/proj-sample-3.jpg" alt="slide-1">
+=======
+                            <img class="project-img" src="img/proj-sample-3.jpg" alt="slide-1">
+>>>>>>> b1ca9e6d39b286a6a68ec9f155cb9dcfba825a8c:MCBetterTogether/index.php
                         </li>
                     </ul>
                 </div>
@@ -162,6 +180,7 @@
              <button>View All Projects</button>
         </div>
     </main>
+<<<<<<< HEAD:index.php
     <hr class="solid">
     <footer>
         <div class="footer-container">
@@ -210,6 +229,10 @@
         <!-- <script src="js/glide.js"></script> -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+=======
+    <!-- Add Footer here -->
+    <?php require_once("assets/footer.php"); ?>
+>>>>>>> b1ca9e6d39b286a6a68ec9f155cb9dcfba825a8c:MCBetterTogether/index.php
     <script>
         const config = {
             type: 'carousel',
@@ -225,7 +248,11 @@
         };
         new Glide('.glide', config).mount();
     </script>
+<<<<<<< HEAD:index.php
     
     </div>
 </body>
 </html>
+=======
+    
+>>>>>>> b1ca9e6d39b286a6a68ec9f155cb9dcfba825a8c:MCBetterTogether/index.php
